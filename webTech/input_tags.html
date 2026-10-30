@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <table cellpadding="3">
+            <tr>
+                <td>FullName</td>
+                <td>
+                    <input type="text" maxlength="20"
+                           pattern="[a-zA-Z ]{1,20}" required>
+                    (max 20 char a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>Lastname</td>
+                <td>
+                    <input type="text" maxlength="20"
+                           pattern="[a-zA-Z ]{1,20}" required>
+                    (max 20 char a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> male
+                    <input type="radio" name="gender" value="female"> female
+                </td>
+            </tr>
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>MOBILE NO</td>
+                <td><input type="tel" name="mobile" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td>ADDRESS</td>
+                <td><textarea name="address" rows="6" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" name="city"></td>
+            </tr>
+            <tr>
+                <td>PINCODE</td>
+                <td>
+                    <input type="text" name="pincode"
+                           maxlength="6" pattern="[0-9]{6}">
+                    (6 digit number)
+                </td>
+            </tr>
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="email" name="email2"></td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td>COUNTRY</td>
+                <td><input type="text" name="country"></td>
+            </tr>
+            <tr>
+                <td>HOBBIES</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="Drawing">Drawing
+                    <input type="checkbox" name="hobby" value="Singing">Singing
+                    <input type="checkbox" name="hobby" value="Dancing">Dancing
+                    <br>
+                    <input type="checkbox" name="hobby" value="Other">Other
+                    <input type="text" name="otherHobby">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table border="0" cellpadding="2" cellspacing="0">
+            <tr>
+                <td colspan="5">Qualification</td>
+            </tr>
+            <tr>
+                <td>sl.no</td>
+                <td>Examination</td>
+                <td>Board</td>
+                <td>Percentage</td>
+                <td>Year of pass</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td><input type="text" name="exam1"></td>
+                <td><input type="text" name="board1"></td>
+                <td><input type="text" name="percentage1"></td>
+                <td><input type="text" name="year1"></td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td><input type="text" name="exam2"></td>
+                <td><input type="text" name="board2"></td>
+                <td><input type="text" name="percentage2"></td>
+                <td><input type="text" name="year2"></td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td><input type="text" name="exam3"></td>
+                <td><input type="text" name="board3"></td>
+                <td><input type="text" name="percentage3"></td>
+                <td><input type="text" name="year3"></td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td><input type="text" name="exam4"></td>
+                <td><input type="text" name="board4"></td>
+                <td><input type="text" name="percentage4"></td>
+                <td><input type="text" name="year4"></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>COURSES<br>APPLIED FOR</td>
+                <td>
+                    <input type="checkbox" name="course" value="BCA">BCA
+                    <input type="checkbox" name="course" value="BCom">B.com
+                    <input type="checkbox" name="course" value="BSc">B.sc
+                    <input type="checkbox" name="course" value="BA">B.A
+                </td>
+            </tr>
+        </table>
+        <br>
+        <center>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </center>
+    </fieldset>
+</form>
+</body>
+</html>
